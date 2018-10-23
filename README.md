@@ -15,9 +15,9 @@ npm install keccak256
 ## Usage
 
 - **keccak256**(data) -> {Buffer}
-  - *{String | Buffer} data* - data string or Buffer
+  - {String | Buffer} data - data string or Buffer
 
-  Returns a *Buffer*
+  Returns a Buffer
 
 ## Getting Started
 

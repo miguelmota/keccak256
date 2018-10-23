@@ -2,7 +2,7 @@
 
 > A wrapper for the [keccak](https://www.npmjs.com/package/keccak) library to compute 256 bit keccak hash in JavaScript.
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/keccak256/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/keccak256.svg?branch=master)](https://travis-ci.org/miguelmota/keccak256) [![Coverage Status](https://coveralls.io/repos/github/miguelmota/keccak256/badge.svg?branch=master)](https://coveralls.io/github/miguelmota/keccak256?branch=master) [![AppVeyor](https://img.shields.io/appveyor/ci/miguelmota/keccak256.svg?branch=master&style=flat-square)](https://ci.appveyor.com/project/miguelmota/keccak256)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/keccak256/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/keccak256.svg?branch=master)](https://travis-ci.org/miguelmota/keccak256) [![Coverage Status](https://coveralls.io/repos/github/miguelmota/keccak256/badge.svg?branch=master)](https://coveralls.io/github/miguelmota/keccak256?branch=master)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -11,6 +11,13 @@
 ```bash
 npm install keccak256
 ```
+
+## Usage
+
+- keccak256(data) -> {Buffer}
+  - {String | Buffer} data - data string or Buffer
+
+  Returns a Buffer
 
 ## Getting Started
 

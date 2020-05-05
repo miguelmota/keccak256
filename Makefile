@@ -14,8 +14,8 @@ lint:
 	@standard test/index.js
 	@standard example/example.js
 
-.PHONY: lint/fix
-lint/fix:
+.PHONY: lint-fix
+lint-fix:
 	@standard --fix index.js
 	@standard --fix test/index.js
 	@standard --fix example/example.js

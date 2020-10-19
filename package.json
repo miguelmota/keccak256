@@ -1,6 +1,6 @@
 {
   "name": "keccak256",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper for the keccak library to compute 256 bit keccak hash in JavaScript",
   "main": "dist/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "bn.js": "^4.11.8",
-    "keccak": "^1.4.0"
+    "keccak": "^3.0.1"
   },
   "keywords": [
     "crypto",

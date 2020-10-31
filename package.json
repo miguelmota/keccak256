@@ -1,8 +1,9 @@
 {
   "name": "keccak256",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for the keccak library to compute 256 bit keccak hash in JavaScript",
   "main": "dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "coverage": "node_modules/nyc/bin/nyc.js report --reporter=text-lcov | ./node_modules/.bin/coveralls",
     "test": "tape ./test/index.js",

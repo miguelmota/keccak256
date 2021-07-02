@@ -1,7 +1,7 @@
 const createKeccakHash = require('keccak')
 const BN = require('bn.js')
 
-module.exports = function (a) {
+function keccak256(a) {
   a = toBuffer(a)
 
   return createKeccakHash('keccak256').update(a).digest()
@@ -84,3 +84,9 @@ function intToHex (i) {
 
   return `0x${hex}`
 }
+
+if (typeof window !== 'undefined') {
+  window.keccak256 = keccak256
+}
+
+module.exports = keccak256

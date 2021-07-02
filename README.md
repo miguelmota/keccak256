@@ -12,6 +12,14 @@
 npm install keccak256
 ```
 
+### CDN
+
+Available on [jsDelivr](https://www.jsdelivr.com/) CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+```
+
 ## Usage
 
 - **keccak256**(data) -> {Buffer}

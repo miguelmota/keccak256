@@ -5,11 +5,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var createKeccakHash = require('keccak');
 var BN = require('bn.js');
 
-module.exports = function (a) {
+function keccak256(a) {
   a = toBuffer(a);
 
   return createKeccakHash('keccak256').update(a).digest();
-};
+}
 
 function toBuffer(v) {
   if (!Buffer.isBuffer(v)) {
@@ -90,3 +90,9 @@ function intToHex(i) {
 
   return '0x' + hex;
 }
+
+if (typeof window !== 'undefined') {
+  window.keccak256 = keccak256;
+}
+
+module.exports = keccak256;

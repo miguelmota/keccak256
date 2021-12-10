@@ -1,6 +1,6 @@
 {
   "name": "keccak256",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A wrapper for the keccak library to compute 256 bit keccak hash in JavaScript",
   "main": "keccak256.js",
   "types": "keccak256.d.ts",

@@ -4,9 +4,9 @@ import createKeccakHash from 'keccak'
 
 const Buffer = buffer.Buffer
 
-function keccak256 (value: any) {
+function keccak256 (value: Buffer | BN | string | number) {
   value = toBuffer(value)
-  return createKeccakHash('keccak256').update(value).digest()
+  return createKeccakHash('keccak256').update(value as Buffer).digest()
 }
 
 function toBuffer (value: any) {

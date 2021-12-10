@@ -3,12 +3,12 @@
   "version": "1.0.4",
   "description": "A wrapper for the keccak library to compute 256 bit keccak hash in JavaScript",
   "main": "keccak256.js",
-  "types": "index.d.ts",
+  "types": "keccak256.d.ts",
   "scripts": {
     "test": "tape test/*.js",
-    "build": "tsc && mv dist/keccak256.js .",
+    "build": "tsc && mv dist/*.js . && mv dist/*.d.ts .",
     "lint": "eslint --fix \"src/**/*\"",
-    "clean": "rimraf keccak256.js"
+    "clean": "rimraf keccak256.js && rimraf keccak256.d.ts && rimraf dist"
   },
   "repository": {
     "type": "git",

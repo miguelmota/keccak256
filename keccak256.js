@@ -2,9 +2,9 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+const bn_js_1 = __importDefault(require("bn.js"));
 const buffer_1 = __importDefault(require("buffer"));
 const keccak_1 = __importDefault(require("keccak"));
-const bn_js_1 = __importDefault(require("bn.js"));
 const Buffer = buffer_1.default.Buffer;
 function keccak256(value) {
     value = toBuffer(value);

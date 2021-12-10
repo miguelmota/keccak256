@@ -2,13 +2,14 @@
   "name": "keccak256",
   "version": "1.0.5",
   "description": "A wrapper for the keccak library to compute 256 bit keccak hash in JavaScript",
-  "main": "keccak256.js",
-  "types": "keccak256.d.ts",
+  "main": "dist/keccak256.js",
+  "types": "dist/keccak256.d.ts",
   "scripts": {
     "test": "tape test/*.js",
-    "build": "tsc && mv dist/*.js . && mv dist/*.d.ts .",
+    "build": "tsc",
+    "build:browser": "browserify -t [ babelify --presets [ es2015 ] ] dist/keccak256.js > keccak256.js",
     "lint": "eslint --fix \"src/**/*\"",
-    "clean": "rimraf keccak256.js && rimraf keccak256.d.ts && rimraf dist"
+    "clean": "rimraf keccak256.js && rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,13 @@
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^17.0.0",
     "eslint": "^7.30.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-config-standard-with-typescript": "^21.0.1",
